@@ -60,7 +60,7 @@ const onEdit=eve=>{
   EmailControl.value = Edit_Obj.Email
   ContactConrtol.value= Edit_Obj.contact
 
-  Addtodobtn.classList.add("d-none")
+  Addtodobtn.classList.add("d-none")//HIdes class 
   Updatetodobtn.classList.remove("d-none")
 
   cl(StudentArr)
