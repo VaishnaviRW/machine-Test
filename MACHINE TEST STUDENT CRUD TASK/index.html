@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+<title>Student Todo task</title>
+<h1>STUDENT CRUD TASK</h1>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/e685e11e2a.js" crossorigin="anonymous"></script>
+
+<style>
+  </style>
+
+</head>
+
+<body>
+       
+         <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                    <div class="card-body"> 
+                        <form id="Studentform">
+                            <div class="form-group">
+                                <label for="Fname">First Name</label>
+                                <input required type="text" class="form-control" id="fNameControl">
+                            </div>
+                               <div class="form-group">
+                                <label for="Lname">Last Name</label>
+                                <input required type="text" class="form-control" id="LNameControl">
+                               </div>
+
+                                  <div class="form-group">
+                                <label for="Email">Email </label>
+                                <input required  type="text" class="form-control" id="EmailControl">
+                            </div>
+                               <div class="form-group">
+                                <label for="Contact">Contact</label>
+                                <input required type="text" class="form-control" id="ContactConrtol">
+                            </div>
+                                <button type="submit" id="Addtodobtn" class="btn btn-outline-primary btn-block">Add Student</button>
+                                <button type="button" id="Updatetodobtn" class="btn btn-outline-primary btn-block d-none">Update Student</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                
+           <div class="col-md-8">
+            <table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Sr NO.</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+       <th scope="col">Contact</th>
+        <th scope="col">Edit</th>
+         <th scope="col">Remove</th>
+    </tr>
+  </thead>
+  <tbody id="StudentTable">
+    
+  </tbody>
+</table>       
+           </div> 
+            </div> 
+         </div>
+
+<script src="app.js">
+</script>
+</body>
+
+</html>

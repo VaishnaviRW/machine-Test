@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    }
+
+.Edit{
+    color: green;
+     cursor: pointer;
+}
+.remove{
+    color: red;
+     cursor: pointer;
+}
