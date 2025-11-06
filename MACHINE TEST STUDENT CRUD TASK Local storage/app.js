@@ -111,10 +111,10 @@ const onRemove = (ele) =>{
 
 
 const onSubmit = eve =>{
-  eve.preventDefault();
+  eve.preventDefault();//default behaviour which  reload the data
   
   let stdObj = {
-    fname: fnameCntrl.value,
+    fname: fnameCntrl.value,  //form control values
     lname: lnameCntrl.value,
     email: emailCntrl.value,
     contact: contactCntrl.value,
@@ -151,21 +151,21 @@ const onSubmit = eve =>{
 
 const onUpdate = () => {
   //update id on local storage 
- let UPDATE_ID = localStorage.getItem("EDIT_ID");
+ let UPDATE_ID = localStorage.getItem("EDIT_ID"); //patch 
   cl(UPDATE_ID);
   
   let UPDATE_OBJ = {  
-    fname: fnameCntrl.value,
+    fname: fnameCntrl.value, //for patching
     lname: lnameCntrl.value,
     email: emailCntrl.value,
     contact: contactCntrl.value,
     stdId: UPDATE_ID
   }
   cl(UPDATE_OBJ);
-  stdForm.reset();
+  stdForm.reset();   //form reset
   
   //update/replace   in array
-  let getIndex = stdArr.findIndex(std => std.stdId ===  UPDATE_ID)
+  let getIndex = stdArr.findIndex(std => std.stdId ===  UPDATE_ID) //FINDOUT THE INDEX NUMBER  
   cl(getIndex);
 stdArr[getIndex] = UPDATE_OBJ;
   
