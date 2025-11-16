@@ -72,7 +72,7 @@ const onEdit = (ele) => {
   submitDataBtn.classList.add("d-none");
 }
  
-
+///remove
 const onRemove = (ele) =>{
   Swal.fire({
   title: "Are you sure?",
